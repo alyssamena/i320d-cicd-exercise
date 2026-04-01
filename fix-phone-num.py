@@ -9,9 +9,9 @@ def fix_phone_num(phone_num_to_fix):
         # Strip off the country code "1" from the beginning.
         # Resulting string should be of length 10 to work with formatting code below.
         phone_num_to_fix = phone_num_to_fix[1:]
-    if len(phone_num_to_fix) != 10:
+   if len(phone_num_to_fix) != 10:
         raise ValueError(f"phone number must be length 10; got \"{phone_num_to_fix}\" which is of length {len(phone_num_to_fix)}")
-    if not phone_num_to_fix.isdigit():
+   if not phone_num_to_fix.isdigit():
         raise ValueError(f"phone number must only contain digits; got \"{phone_num_to_fix}\"")
    
 
